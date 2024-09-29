@@ -5,20 +5,17 @@ const Projects = () => {
     {
       name: 'Portfolio Website',
       description: 'A personal portfolio website built with React and Tailwind CSS.',
-      link: 'https://yourportfolio.com',
-      github: 'https://github.com/yourusername/portfolio',
+      github: 'https://github.com/ShashankGautam050/my_portfolio',
     },
     {
-      name: 'Quizzy - Quiz App',
-      description: 'A full-stack quiz application using Spring Boot and React.',
-      link: 'https://quizzy.com',
-      github: 'https://github.com/yourusername/quizzy',
+      name: 'Notes App',
+      description: 'NotesApp offers a seamless note-taking experience using MVVM architecture, LiveData, and Room for efficient task management and idea   jotting.',
+      github: 'https://github.com/ShashankGautam050/notesapp',
     },
     {
       name: 'Unit Converter',
       description: 'An Android app to convert units for speed, mass, and temperature.',
-      link: 'https://play.google.com/store/apps/details?id=com.yourapp',
-      github: 'https://github.com/yourusername/unit-converter',
+      github: 'https://github.com/ShashankGautam050/ConverterApp',
     },
   ];
 
@@ -35,14 +32,6 @@ const Projects = () => {
               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
               <div className="flex items-center justify-start space-x-4">
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-yellow-500 underline hover:text-yellow-400"
-                >
-                  Live Demo
-                </a>
                 <a 
                   href={project.github} 
                   target="_blank" 

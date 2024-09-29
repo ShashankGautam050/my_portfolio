@@ -9,16 +9,10 @@ const Certifications = () => {
       link: 'https://www.linkedin.com/posts/shashank-gautam-27852722a_github-ultimate-master-git-and-github-beginner-activity-7238102275603226624-Xj_H?utm_source=share&utm_medium=member_ios', // Add your certificate link
     },
     {
-      title: 'JavaScript Developer',
+      title: 'Android Jetpack Compose - From Zero to Hero',
       organization: 'Udemy',
-      date: 'September 2024',
-      link: 'https://udemy.com/...',
-    },
-    {
-      title: 'React Developer',
-      organization: 'freeCodeCamp',
-      date: 'March 2021',
-      link: 'https://freecodecamp.org/...',
+      date: 'July 2024',
+      link: 'https://www.linkedin.com/posts/shashank-gautam-27852722a_androiddevelopment-jetpackcompose-certification-activity-7215593585818095616-W-WO?utm_source=share&utm_medium=member_ios',
     },
   ];
 

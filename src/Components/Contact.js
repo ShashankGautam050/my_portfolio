@@ -43,7 +43,7 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="px-4 py-2 text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
           <input
             type="email"
@@ -52,7 +52,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="px-4 py-2 rounded-md text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
           <textarea
             name="message"
@@ -61,7 +61,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             rows="4"
-            className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="px-4 py-2 rounded-md border text-black border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
           <button
             type="submit"

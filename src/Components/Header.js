@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'; // Change to import Link from react-router-dom
 import AnimatedLogo from './AnimatedLogo'; // Adjust the import path as necessary
 
 const Header = () => {
@@ -13,42 +13,15 @@ const Header = () => {
     <header className="bg-gray-800 text-white fixed top-0 w-full z-50 shadow-md">
       <div className="flex justify-between items-center p-4 container mx-auto">
         <div className="flex items-center">
-          {/* Replace text with AnimatedLogo */}
           <AnimatedLogo />
         </div>
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-4">
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer hover:text-yellow-500"
-          >
+          <Link to="/" className="cursor-pointer hover:text-yellow-500">
             Home
           </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer hover:text-yellow-500"
-          >
-            About
-          </Link>
-          <Link
-            to="projects"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer hover:text-yellow-500"
-          >
-            Projects
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer hover:text-yellow-500"
-          >
-            Contact
+          <Link to="/articles" className="cursor-pointer hover:text-yellow-500"> {/* Change here */}
+            Articles
           </Link>
         </nav>
         {/* Mobile Menu Button */}
@@ -81,41 +54,11 @@ const Header = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <nav className="md:hidden bg-gray-700 px-4 pb-4">
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            className="block py-2 hover:text-yellow-500"
-            onClick={toggleMenu}
-          >
+          <Link to="/" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>
             Home
           </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            className="block py-2 hover:text-yellow-500"
-            onClick={toggleMenu}
-          >
-            About
-          </Link>
-          <Link
-            to="projects"
-            smooth={true}
-            duration={500}
-            className="block py-2 hover:text-yellow-500"
-            onClick={toggleMenu}
-          >
-            Projects
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="block py-2 hover:text-yellow-500"
-            onClick={toggleMenu}
-          >
-            Contact
+          <Link to="/articles" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>
+            Articles
           </Link>
         </nav>
       )}
