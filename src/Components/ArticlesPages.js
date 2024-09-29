@@ -142,10 +142,10 @@ const ArticlesPage = () => {
       {/* Main content area for article details */}
       <div className={`w-full md:w-4/5 p-4 flex flex-col overflow-y-hidden`} style={{ height: '80vh' }}>
         <div className="bg-white rounded-lg shadow-lg flex-grow overflow-y-auto p-6" style={{ border: '2px solid #e2e8f0' }}> {/* Added padding */}
-          <h1 className="text-3xl font-bold mb-6 text-gray-800 md:text-4xl" style={{ fontFamily: 'Dancing Script, cursive' }}>
+          <h1 className="text-3xl font-bold mb-6 text-gray-800 md:text-4xl" style={{ fontFamily: 'Dancing Script' }}>
             {currentArticle.title}
           </h1>
-          <p className="text-sm text-gray-700 leading-relaxed md:text-lg text-justify" style={{ fontFamily: 'Dancing Script, cursive' }}>
+          <p className="text-sm text-gray-700 leading-relaxed md:text-lg text-justify" style={{ fontFamily: 'Dancing Script,' }}>
             {currentArticle.content || 'This article is currently empty.'}
           </p>
         </div>
