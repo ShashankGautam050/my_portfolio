@@ -77,6 +77,159 @@ const articles = [
 
   </>
       )
+    },{
+      id: 2, title: 'Which Programming Language to Learn First & Debunking Myths About Learning Multiple Languages ?', 
+      content: (
+        <>
+        <b className="text-2xl font-bold mb-6 text-gray-800 md:text-2xl">Introduction</b>
+        <br/>
+<p>Choosing the appropriate first programming language is an important step in your coding journey. Beginners may feel overwhelmed by the sheer amount of possibilities available, including Python, JavaScript, and Java. Each language serves a unique function, ranging from web development to data science, and your choice will influence how readily you acquire fundamental concepts such as problem solving and algorithms.</p>
+<br/>
+<p>
+A beginner-friendly language can shorten your learning curve, allowing you to complete projects and gain confidence faster. For example, Python's straightforward syntax makes it ideal for general-purpose programming, whereas JavaScript is required for web development.
+</p>
+<br/>
+<p>
+Many novices think there is a "best" language for everyone or that they must learn several languages at once. Actually, learning just one language is significantly more beneficial. Whether you want to focus on data science, web app development, or mobile development, your decision should be based on your objectives.
+</p>
+<br/>
+<p>
+To help you begin learning efficiently, this article will dispel common myths and assist you in selecting the appropriate language.
+</p>
+<br/>
+<b className="text-2xl font-bold mb-6 text-gray-800 md:text-2xl"> Common Myths About Learning Programming</b>
+<br/>
+<br/>
+<b className="text-xl mb-6 text-gray-400 "> Myth 1: You Need to Learn Multiple Languages to Succeed</b>
+<br/>
+<p>
+Many newcomers think that in order to succeed as developers, they must simultaneously learn many programming languages. This concept can be very daunting and frequently causes more confusion than advancement. It is actually far more advantageous to learn one language first. Understanding the fundamentals of programming, which include data structures, algorithms, and problem-solving techniques, is independent of language. It's considerably simpler to switch to or learn new languages once you grasp these foundational ideas. Prior to developing your skill set, concentrating on one language also enables you to construct projects that are useful, acquire confidence, and comprehend coding on a deeper level.
+</p>
+<br/>
+<b className="text-xl mb-6 text-gray-400 "> Myth 2: There's a "Best" Language for Beginners</b>
+<br/>
+<p>
+The question "What's the best programming language to start with?" is one that newcomers frequently ask. The "best" language isn't one that works for everyone, either. The best language for you will depend on your objectives and interests. For instance, Python is excellent for general-purpose programming and data research, but JavaScript might be the ideal choice if you're interested in web development. Rather of concentrating on the concept of a one-size-fits-all solution, the important thing is to select a language that corresponds with what you want to produce or specialize in. Your decision should take your desired career path and projects into consideration.
+</p>
+<br/>
+<b className="text-xl mb-6 text-gray-400 "> Myth 3: Syntax is the Hardest Part</b>
+<br/>
+<p>
+For many novices, learning syntax is the most difficult part of learning to code. This false belief causes people to place a great deal of emphasis on learning linguistic structures and norms because they believe that this is what distinguishes skilled programmers. But in actuality, logic, understanding algorithms, and solving problems are frequently far more difficult than syntax itself. Although understanding syntax is crucial, it is only a tool for communicating your thoughts and solutions. The capacity to analyze critically, deconstruct issues, and create efficient algorithms is the real key to programming. Learning the syntax of a new language gets much simpler if you master these abilities.
+</p>
+<br/>
+
+<b className="text-2xl font-bold mb-6 text-gray-800 md:text-2xl">Factors to Consider When Choosing Your First Programming Language</b>
+
+<p>
+When selecting your first programming language, it's essential to consider several key factors to ensure it aligns with your goals and aspirations.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Your Goals:</span> Choose a language that matches what you want to build. For instance, if you're interested in web development, JavaScript would be a suitable choice. For data science, Python is highly recommended, while game development might lead you to languages like C# or C++.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 "> Job Market Demand:</span> Consider languages that are in high demand in the job market. Python, JavaScript, and Java consistently rank among the top choices for employers, making them excellent options for your first language.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Learning Ease:</span> Certain languages are easier for novices to learn than others. Python is well known for its easy readability and straightforward syntax, which helps beginners quickly pick up on programming principles.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Community & Learning Resources:</span> The size and degree of activity of a language's community can have a big impact on how well you learn it. More resources, lessons, and support are available in a thriving community, which facilitates assistance and helps you find the answers to your problems.
+
+<br/>
+<br/>
+
+You can select a programming language that fulfills your present requirements and fosters your development career by taking these aspects into consideration.
+</p>
+<br/>
+<b className="text-2xl font-bold mb-6 text-gray-800 md:text-2xl"> Popular Languages to Consider as a Beginner</b>
+<br/>
+<p>
+These are some well-liked programming languages that can be used for a variety of purposes and interests when you first start out:
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Python</span>
+<br/>
+Python is renowned for being very versatile and readable. It's a great option for novices due to its simple syntax. Web development, data science, automation, and machine learning are just a few of its many uses. Python is especially well-liked for data analysis and artificial intelligence in academia and business.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Usecases:</span>
+
+<br/>
+<ul className="list-decimal">
+  <li className="mx-5">Data science and analytics:Libraries like NumPy, Pandas, TensorFlow, and Scikit-learn.</li>
+  <li className="mx-5">Machine learning and AI.</li>
+  <li className="mx-5">Backend web development :Popular frameworks like Django and Flask.</li>
+</ul><br/>
+<span className="text-xl mb-6 text-gray-400 ">Java</span>
+<br/>
+Strongly typed and object-oriented, Java is a popular language in business settings. It is well-known for its scalability and stability and is the preferred option for developing mobile apps, particularly for Android.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Usecases:</span>
+
+<br/>
+<ul className="list-decimal">
+  <li className="mx-5">Android development: Java is the primary language for Android apps.</li>
+  <li className="mx-5">Large-scale backend systems: Used in large-scale enterprise systems, financial services, and backend development.</li>
+  <li className="mx-5">Web Development: Using Java frameworks like Spring.</li>
+  <li className="mx-5">Big Data: Tools like Hadoop are written in Java.</li>
+</ul><br/>
+<span className="text-xl mb-6 text-gray-400 ">JavaScript</span>
+<br/>
+JavaScript is the core language of the web. It's used to build interactive websites and is a must-learn for front-end and full-stack developers.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Usecases:</span>
+
+<br/>
+<ul className="list-decimal">
+  <li className="mx-5">Web Development: For creating dynamic, interactive websites (alongside HTML and CSS).</li>
+  <li className="mx-5">Backend Development: Using Node.js, JavaScript can be used for server-side development.</li>
+  <li className="mx-5">
+  Mobile App Development: Frameworks like React Native allow for cross-platform mobile app development.</li>
+  <li className="mx-5">
+  Game Development: Some games use JavaScript with frameworks like Phaser.</li>
+</ul><br/>
+<span className="text-xl mb-6 text-gray-400 ">C++</span>
+<br/>
+C++ is an extension of C that allows developers to have fine-grained control over system resources. It is a strong programming language designed for high-performance applications.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Usecases:</span>
+
+<br/>
+<ul className="list-decimal">
+  <li className="mx-5">Game Development: Popular in game engines like Unreal Engine.</li>
+  <li className="mx-5">Systems Programming: Operating systems, embedded systems, and system-level applications.</li>
+  <li className="mx-5" >High-Performance Applications: Real-time systems, simulations, and financial modeling.</li>
+</ul><br/>
+<span className="text-xl mb-6 text-gray-400 ">C#</span><br/>
+C# is a programming language created by Microsoft that is mostly used for constructing Windows applications. It is also commonly used in game development and enterprise software.
+<br/>
+<br/>
+<span className="text-xl mb-6 text-gray-400 ">Usecases:</span>
+
+<br/>
+<ul className="list-decimal">
+  <li className="mx-5">Game Development: Widely used with the Unity game engine.</li>
+  <li className="mx-5">Web Development: Using the ASP.NET framework for web applications.</li>
+  <li className="mx-5" >Desktop Applications: Windows-based software.</li>
+  <li className="mx-5">Mobile Apps: Through Xamarin for cross-platform development.</li>
+</ul>
+<br/>
+<b className="text-2xl font-bold mb-6 text-gray-800 md:text-2xl">Conclusion</b>
+<br/>
+<p>
+When starting out in programming, focus on what will help you achieve your goals, whether that's web development, mobile apps, or data science. Python is an excellent beginner's option due to its simplicity and versatility, whereas JavaScript is required for web programming. As your skills develop, don't be afraid to experiment with languages such as Java, C++, or C#.
+<br/>
+<br/>
+Remember that knowing core programming concepts, rather than learning every language, is essential for success. Learning various languages improves your skills while avoiding confusion, and your first language will not determine your entire career. Stay adaptive, concentrate on problem-solving, and see languages as instruments for achieving your objectives.
+
+</p>
+</p>
+        </>
+      )
     }
   // Add more articles as needed
 ];
@@ -129,7 +282,8 @@ const ArticlesPage = () => {
           {articles.map((article) => (
             <li key={article.id} className="mb-2">
               <div
-                className="block p-2 bg-gray-100 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300"
+                className={`block p-2 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300 
+                ${currentArticle.id === article.id ? 'border-2 border-blue-500 bg-blue-100' : 'bg-gray-100'}`} // Add border and background color to the selected article
                 onClick={() => handleArticleClick(article)}
               >
                 <span className="text-gray-800 font-semibold">{article.title}</span>
@@ -141,7 +295,7 @@ const ArticlesPage = () => {
 
       {/* Main content area for article details */}
       <div className={`w-full md:w-4/5 p-4 flex flex-col overflow-y-hidden`} style={{ height: '80vh' }}>
-        <div className="bg-white rounded-lg shadow-lg flex-grow overflow-y-auto p-6" style={{ border: '2px solid #e2e8f0' }}> {/* Added padding */}
+        <div className="bg-white rounded-lg shadow-lg flex-grow overflow-y-auto p-6" style={{ border: '2px solid #e2e8f0' }}>
           <h1 className="text-3xl font-bold mb-6 text-gray-800 md:text-4xl" style={{ fontFamily: 'Dancing Script' }}>
             {currentArticle.title}
           </h1>
@@ -164,7 +318,8 @@ const ArticlesPage = () => {
             {articles.map((article) => (
               <li key={article.id}>
                 <div
-                  className="block p-4 bg-gray-100 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300"
+                  className={`block p-4 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300
+                  ${currentArticle.id === article.id ? 'border-2 border-blue-500 bg-blue-100' : 'bg-gray-100'}`}
                   onClick={() => handleArticleClick(article)}
                 >
                   <span className="text-gray-800 font-semibold text-sm">{article.title}</span>
@@ -187,3 +342,4 @@ const ArticlesPage = () => {
 };
 
 export default ArticlesPage;
+
