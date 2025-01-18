@@ -20,8 +20,11 @@ const Header = () => {
           <Link to="/" className="cursor-pointer hover:text-yellow-500">
             Home
           </Link>
-          <Link to="/articles" className="cursor-pointer hover:text-yellow-500"> {/* Change here */}
+          <Link to="/articles" className="cursor-pointer hover:text-yellow-500">
             Articles
+          </Link>
+          <Link to="/tutorials" className="cursor-pointer hover:text-yellow-500">
+            Tutorials
           </Link>
         </nav>
         {/* Mobile Menu Button */}
@@ -59,6 +62,9 @@ const Header = () => {
           </Link>
           <Link to="/articles" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>
             Articles
+          </Link>
+          <Link to="/tutorials" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>
+            Tutorials
           </Link>
         </nav>
       )}

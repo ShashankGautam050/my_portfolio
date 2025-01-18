@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import MainContent from './Components/MainContent'; // Your combined component for Home, Projects, About, and Contact
 import Article from './Components/ArticlesPages'; // Your Article component
 import Footer from './Components/Footer';
+import Tutorials from './Components/Tutorials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MainContent />} />
             <Route path="/articles" element={<Article />} />
+            <Route path="/tutorials" element={<Tutorials />} />
           </Routes>
         </main>
         <Footer />

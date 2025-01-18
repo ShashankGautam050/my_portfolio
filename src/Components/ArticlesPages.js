@@ -168,6 +168,12 @@ const articles = [
 const ArticlesPage = () => {
   const [currentArticle, setCurrentArticle] = useState(articles[0]); // Default to the first article
   const [drawerVisible, setDrawerVisible] = useState(false); // Track if drawer is visible
+  const [searchQuery, setSearchQuery] = useState(""); // State to hold the search query
+
+  // Filter articles based on the search query
+  const filteredArticles = articles.filter((article) =>
+    article.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   // Function to handle article selection
   const handleArticleClick = (article) => {
@@ -209,12 +215,22 @@ const ArticlesPage = () => {
       {/* Sidebar for desktop view */}
       <div className="w-1/5 bg-white p-4 hidden md:block shadow-lg overflow-y-auto" style={{ maxHeight: 'calc(100vh - 16px)' }}>
         <h2 className="text-2xl font-bold mb-4 text-gray-800">Articles</h2>
+        
+        {/* Search input */}
+        <input
+          type="text"
+          placeholder="Search articles..."
+          className="w-full p-2 mb-4 border border-gray-300 rounded"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)} // Update search query
+        />
+        
         <ul>
-          {articles.map((article) => (
+          {filteredArticles.map((article) => (
             <li key={article.id} className="mb-2">
               <div
                 className={`block p-2 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300 
-                ${currentArticle.id === article.id ? 'border-2 border-blue-500 bg-blue-100' : 'bg-gray-100'}`} // Add border and background color to the selected article
+                ${currentArticle.id === article.id ? 'border-2 border-blue-500 bg-blue-100' : 'bg-gray-100'}`} 
                 onClick={() => handleArticleClick(article)}
               >
                 <span className="text-gray-800 font-semibold">{article.title}</span>
@@ -245,8 +261,18 @@ const ArticlesPage = () => {
       <div className={`fixed inset-y-0 left-0 transform transition-transform duration-300 bg-white shadow-lg z-50 w-3/4 h-full ${drawerVisible ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 overflow-y-auto h-full">
           <h2 className="text-xl font-bold mb-4 text-gray-800">Articles</h2>
+          
+          {/* Search input */}
+          <input
+            type="text"
+            placeholder="Search articles..."
+            className="w-full p-2 mb-4 border border-gray-300 rounded"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)} // Update search query
+          />
+          
           <ul className="space-y-2">
-            {articles.map((article) => (
+            {filteredArticles.map((article) => (
               <li key={article.id}>
                 <div
                   className={`block p-4 rounded-lg shadow hover:bg-gray-200 cursor-pointer transition duration-300
@@ -273,4 +299,3 @@ const ArticlesPage = () => {
 };
 
 export default ArticlesPage;
-

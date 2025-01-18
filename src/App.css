@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;  /* This will make the main content take up all available space */
+}

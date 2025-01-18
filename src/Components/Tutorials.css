@@ -1,0 +1,116 @@
+/* Overall layout of tutorials */
+.tutorial-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Left side: List of tutorials */
+  .tutorial-list {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .tutorial-list h2 {
+    font-family: 'Times New Roman', Times, serif;  /* Using Times New Roman for headings */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .tutorial-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tutorial-item {
+    padding: 10px;
+    font-family: Georgia, serif;  /* Using Georgia for list items */
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .tutorial-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tutorial-item.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Right side: Tutorial content */
+  .tutorial-content {
+    width: 65%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+  }
+  
+  .content-title {
+    font-family: 'Times New Roman', Times, serif;  /* Using Times New Roman for headings */
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .tutorial-content p {
+    font-family: Georgia, serif;  /* Using Georgia for paragraph content */
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Article-specific styles moved here */
+  .article-container {
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .article-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tutorial-layout {
+      flex-direction: column;
+    }
+  
+    .tutorial-list {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .tutorial-content {
+      width: 100%;
+    }
+  }
+  
