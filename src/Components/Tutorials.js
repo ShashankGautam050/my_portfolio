@@ -6,30 +6,30 @@ const bestPractices = [
     id: 1,
     title: 'Mastering JavaScript: Best Practices for Beginners',
     content: `
-      <div class="tutorial-wrapper">
+     <div class="tutorial-wrapper">
         <div class="tutorial-content">
           <h2 class="text-xl font-bold text-gray-800 mb-4">JavaScript Basics</h2>
-          <p class="text-gray-700 mb-4">Welcome to JavaScript! This tutorial is your first step into the world of one of the most powerful and widely-used programming languages. JavaScript enables you to create dynamic and interactive experiences, making it a cornerstone of modern web development. By the end, you’ll feel confident and ready to explore its endless possibilities.</p>
+          <p class="text-gray-700 mb-4">Welcome to <span class="text-blue-600 font-bold">JavaScript</span>! This tutorial is your first step into the world of one of the most powerful and widely-used programming languages. <span class="text-blue-600 font-bold">JavaScript</span> enables you to create dynamic and interactive experiences, making it a cornerstone of modern web development. By the end, you’ll feel confident and ready to explore its endless possibilities.</p>
           
           <div class="alert alert-warning mb-4">
             <strong>Pro Tip:</strong> Focus on understanding the basics thoroughly. They are the foundation for mastering more advanced topics later.
           </div>
           
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Why Learn JavaScript?</h3>
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Why Learn <span class="text-blue-600 font-bold">JavaScript</span>?</h3>
           <ul class="list-disc pl-6 mb-4 text-gray-700">
-            <li>JavaScript is essential for front-end web development.</li>
-            <li>It powers frameworks like React, Angular, and Vue.</li>
-            <li>Knowledge of JavaScript opens up opportunities in backend development with Node.js.</li>
+            <li><span class="text-green-600 font-bold">JavaScript</span> is essential for front-end web development.</li>
+            <li>It powers frameworks like <span class="text-purple-600 font-bold">React</span>, <span class="text-purple-600 font-bold">Angular</span>, and <span class="text-purple-600 font-bold">Vue</span>.</li>
+            <li>Knowledge of <span class="text-blue-600 font-bold">JavaScript</span> opens up opportunities in backend development with <span class="text-green-600 font-bold">Node.js</span>.</li>
             <li>It's supported by a massive community and has abundant resources.</li>
           </ul>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-2">Learning Steps</h3>
           <ol class="list-decimal pl-6 mb-4">
-            <li>Understand the different data types in JavaScript (string, number, boolean, object, array).</li>
-            <li>Learn how to use functions, loops, and conditional statements.</li>
-            <li>Explore how JavaScript interacts with HTML and CSS using the DOM (Document Object Model).</li>
-            <li>Work with asynchronous code using promises and async/await.</li>
-            <li>Familiarize yourself with ES6+ features like arrow functions, template literals, and destructuring.</li>
+            <li>Understand the different <span class="text-red-600 font-bold">data types</span> in <span class="text-blue-600 font-bold">JavaScript</span> (string, number, boolean, object, array).</li>
+            <li>Learn how to use <span class="text-yellow-600 font-bold">functions</span>, <span class="text-yellow-600 font-bold">loops</span>, and <span class="text-yellow-600 font-bold">conditional statements</span>.</li>
+            <li>Explore how <span class="text-blue-600 font-bold">JavaScript</span> interacts with HTML and CSS using the <span class="text-pink-600 font-bold">DOM</span> (Document Object Model).</li>
+            <li>Work with <span class="text-purple-600 font-bold">asynchronous code</span> using promises and <span class="text-purple-600 font-bold">async/await</span>.</li>
+            <li>Familiarize yourself with <span class="text-green-600 font-bold">ES6+</span> features like arrow functions, template literals, and destructuring.</li>
             <li>Learn to debug your code using browser developer tools.</li>
           </ol>
           
@@ -39,20 +39,21 @@ const bestPractices = [
           </p>
           <ul class="list-disc pl-6 mb-4 text-gray-700">
             <li>If you're stuck, break down the problem into smaller pieces.</li>
-            <li>Use online resources like MDN Web Docs and Stack Overflow.</li>
-            <li>Practice solving coding problems on platforms like Codewars or LeetCode.</li>
+            <li>Use online resources like <span class="text-green-600 font-bold">MDN Web Docs</span> and <span class="text-blue-600 font-bold">Stack Overflow</span>.</li>
+            <li>Practice solving coding problems on platforms like <span class="text-purple-600 font-bold">Codewars</span> or <span class="text-purple-600 font-bold">LeetCode</span>.</li>
             <li>Don't hesitate to ask for help from the developer community.</li>
           </ul>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-2">Practice Makes Perfect</h3>
           <p class="text-gray-700 mb-4">
-            Mistakes are an essential part of the learning process. The more you practice, the more confident you'll become in writing clean and efficient JavaScript code. Try building small projects such as:
+            Mistakes are an essential part of the learning process. The more you practice, the more confident you'll become in writing clean and efficient <span class="text-blue-600 font-bold">JavaScript</span> code. Try building small projects such as:
           </p>
           <ul class="list-disc pl-6 mb-4 text-gray-700">
-            <li>A simple to-do list application.</li>
-            <li>A calculator with basic arithmetic functions.</li>
+            <li>A simple <span class="text-green-600 font-bold">to-do list application</span>.</li>
+            <li>A <span class="text-green-600 font-bold">calculator</span> with basic arithmetic functions.</li>
             <li>A personal portfolio website showcasing your work.</li>
           </ul>
+
 
           <div class="bg-gray-100 p-4 rounded-lg mt-6">
             <p class="text-gray-700"><strong>Important Note:</strong> Learning JavaScript takes time and consistent effort. Don’t rush through the topics—master each concept before moving on. Start small and gradually take on more complex projects as your skills improve.</p>
