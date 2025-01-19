@@ -1,25 +1,91 @@
 import { useState, useEffect } from 'react';
 
 // Sample tutorials data
-const tutorials = [
+const bestPractices = [
   {
     id: 1,
-    title: 'Introduction to JavaScript',
-    content: `Welcome to your first JavaScript tutorial! In this tutorial, you'll learn about the basics of JavaScript syntax and rules. 
-    JavaScript is a versatile language used for both front-end and back-end development. 
-    You'll explore variables, functions, loops, and data types as you get started with coding.`
-  },
-  {
-    id: 2,
-    title: 'Variables and Data Types',
-    content: `In this tutorial, we will dive into how to declare and use variables, and learn about different data types available in JavaScript. 
-    Variables store data values that can be modified during the execution of a program. JavaScript has several primitive data types such as strings, numbers, booleans, and more.`
-  },
-  {
-    id: 3,
-    title: 'Functions and Loops',
-    content: `This tutorial focuses on understanding functions and loops. Functions allow you to organize code into reusable blocks. 
-    Loops such as 'for' and 'while' are used to repeat actions multiple times, which is useful for tasks like iterating over arrays or objects.`
+    title: 'Mastering JavaScript: Best Practices for Beginners',
+    content: `
+      <div class="tutorial-wrapper">
+        <div class="tutorial-content">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">JavaScript Basics</h2>
+          <p class="text-gray-700 mb-4">Welcome to JavaScript! This tutorial will introduce you to key concepts such as variables, data types, and control flow. JavaScript is one of the most powerful and widely used programming languages, especially for building interactive web applications.</p>
+          
+          <div class="alert alert-warning mb-4">
+            <strong>Pro Tip:</strong> Focus on understanding the basics thoroughly. They are the foundation for mastering more advanced topics later.
+          </div>
+          
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Why Learn JavaScript?</h3>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>JavaScript is essential for front-end web development.</li>
+            <li>It powers frameworks like React, Angular, and Vue.</li>
+            <li>Knowledge of JavaScript opens up opportunities in backend development with Node.js.</li>
+            <li>It's supported by a massive community and has abundant resources.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Learning Steps</h3>
+          <ol class="list-decimal pl-6 mb-4">
+            <li>Understand the different data types in JavaScript (string, number, boolean, object, array).</li>
+            <li>Learn how to use functions, loops, and conditional statements.</li>
+            <li>Explore how JavaScript interacts with HTML and CSS using the DOM (Document Object Model).</li>
+            <li>Work with asynchronous code using promises and async/await.</li>
+            <li>Familiarize yourself with ES6+ features like arrow functions, template literals, and destructuring.</li>
+            <li>Learn to debug your code using browser developer tools.</li>
+          </ol>
+          
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Common Challenges</h3>
+          <p class="text-gray-700 mb-4">
+            Every developer faces challenges, especially when starting out. Here are some tips to overcome them:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>If you're stuck, break down the problem into smaller pieces.</li>
+            <li>Use online resources like MDN Web Docs and Stack Overflow.</li>
+            <li>Practice solving coding problems on platforms like Codewars or LeetCode.</li>
+            <li>Don't hesitate to ask for help from the developer community.</li>
+          </ul>
+
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Practice Makes Perfect</h3>
+          <p class="text-gray-700 mb-4">
+            Mistakes are an essential part of the learning process. The more you practice, the more confident you'll become in writing clean and efficient JavaScript code. Try building small projects such as:
+          </p>
+          <ul class="list-disc pl-6 mb-4 text-gray-700">
+            <li>A simple to-do list application.</li>
+            <li>A calculator with basic arithmetic functions.</li>
+            <li>A personal portfolio website showcasing your work.</li>
+          </ul>
+
+          <div class="bg-gray-100 p-4 rounded-lg mt-6">
+            <p class="text-gray-700"><strong>Important Note:</strong> Learning JavaScript takes time and consistent effort. Don’t rush through the topics—master each concept before moving on. Start small and gradually take on more complex projects as your skills improve.</p>
+          </div>
+          
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Recommended YouTube Channels</h3>
+          <div class="bg-blue-50 p-4 rounded-lg mt-6 border-l-4 border-blue-500">
+            <p class="text-gray-700"><strong>For Hindi Tutorials:</strong></p>
+            <ul class="list-disc pl-6 text-gray-700">
+              <li><a href="https://www.youtube.com/@CodeWithHarry" class="text-blue-600 underline" target="_blank">Code With Harry</a> - Simplified tutorials in Hindi covering JavaScript and other technologies.</li>
+              <li><a href="https://www.youtube.com/@chaiaurcode" class="text-blue-600 underline" target="_blank">Chai aur Code</a> - Learn coding concepts in Hindi with a casual approach.</li>
+              <li><a href="https://www.youtube.com/@SheriyansCodingSchool" class="text-blue-600 underline" target="_blank">Sheriyans Coding School</a> - Hindi tutorials on web development, including JavaScript.</li>
+            </ul>
+
+            <p class="text-gray-700 mt-4"><strong>For English Tutorials:</strong></p>
+            <ul class="list-disc pl-6 text-gray-700">
+              <li><a href="https://www.youtube.com/@TraversyMedia" class="text-blue-600 underline" target="_blank">Traversy Media</a> - One of the best channels for web development tutorials.</li>
+              <li><a href="https://www.youtube.com/@programmingwithmosh" class="text-blue-600 underline" target="_blank">Programming with Mosh</a> - High-quality tutorials on JavaScript and other programming languages.</li>
+              <li><a href="https://www.youtube.com/@javascriptmastery" class="text-blue-600 underline" target="_blank">JavaScript Mastery</a> - Advanced JavaScript tutorials and projects for mastering the language.</li>
+            </ul>
+          </div>
+
+          <div class="bg-blue-50 p-4 rounded-lg mt-6 border-l-4 border-blue-500">
+            <p class="text-gray-700"><strong>Additional Resources:</strong> Here are some valuable resources to deepen your knowledge:</p>
+            <ul class="list-disc pl-6 text-gray-700">
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="text-blue-600 underline" target="_blank">MDN Web Docs</a> - Comprehensive documentation for JavaScript.</li>
+              <li><a href="https://javascript.info/" class="text-blue-600 underline" target="_blank">JavaScript.info</a> - A modern tutorial on JavaScript basics and beyond.</li>
+              <li><a href="https://www.freecodecamp.org/" class="text-blue-600 underline" target="_blank">freeCodeCamp</a> - Hands-on coding exercises and projects.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
   }
 ];
 
@@ -27,12 +93,12 @@ const tutorials = [
 
 
 const Tutorials = () => {
-  const [currentTutorial, setCurrentTutorial] = useState(tutorials[0]); // Default to the first tutorial
+  const [currentTutorial, setCurrentTutorial] = useState(bestPractices[0]); // Default to the first tutorial
   const [drawerVisible, setDrawerVisible] = useState(false); // Track if drawer is visible
   const [searchQuery, setSearchQuery] = useState(""); // State to hold the search query
 
   // Filter tutorials based on the search query
-  const filteredTutorials = tutorials.filter((tutorial) =>
+  const filteredTutorials = bestPractices.filter((tutorial) =>
     tutorial.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -75,12 +141,12 @@ const Tutorials = () => {
     <div className="flex h-screen bg-gradient-to-r from-white via-lightgray to-lightyellow relative">
       {/* Sidebar for desktop view */}
       <div className="w-1/5 bg-white p-4 hidden md:block shadow-lg overflow-y-auto" style={{ maxHeight: 'calc(100vh - 16px)' }}>
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Tutorials</h2>
+        <h2 className="text-2xl font-bold mb-4 text-gray-800">Best Practices</h2>
 
         {/* Search Input */}
         <input
           type="text"
-          placeholder="Search tutorials..."
+          placeholder="Search for topic..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full p-2 mb-4 border rounded-lg text-gray-700"
@@ -111,9 +177,10 @@ const Tutorials = () => {
           <h1 className="text-3xl font-bold mb-6 text-gray-800 md:text-4xl" style={{ fontFamily: 'Dancing Script' }}>
             {currentTutorial.title}
           </h1>
-          <p className="text-sm text-gray-700 leading-relaxed md:text-lg text-justify" style={{ fontFamily: 'Dancing Script,' }}>
-            {currentTutorial.content || 'This tutorial is currently empty.'}
-          </p>
+          <div
+            className="text-sm text-gray-700 leading-relaxed md:text-lg text-justify"
+            dangerouslySetInnerHTML={{ __html: currentTutorial.content || 'This tutorial is currently empty.' }}
+          />
         </div>
       </div>
 

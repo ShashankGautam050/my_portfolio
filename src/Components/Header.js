@@ -24,7 +24,7 @@ const Header = () => {
             Articles
           </Link>
           <Link to="/tutorials" className="cursor-pointer hover:text-yellow-500">
-            Tutorials
+           Best Practices
           </Link>
         </nav>
         {/* Mobile Menu Button */}
