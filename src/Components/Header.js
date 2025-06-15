@@ -26,6 +26,8 @@ const Header = () => {
           <Link to="/tutorials" className="cursor-pointer hover:text-yellow-500">
            Best Practices
           </Link>
+       
+
         </nav>
         {/* Mobile Menu Button */}
         <button
@@ -66,6 +68,8 @@ const Header = () => {
           <Link to="/tutorials" className="block py-2 hover:text-yellow-500" onClick={toggleMenu}>
             Tutorials
           </Link>
+   
+
         </nav>
       )}
     </header>
